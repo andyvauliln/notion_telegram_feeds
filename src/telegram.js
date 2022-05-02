@@ -1,10 +1,12 @@
 import TelegramBot from 'telegram-bot-nodejs';
+import dotenv from 'dotenv';
 
-const token = '5230540212:AAFhH0UTDBU1XdPuWUxBZ3j7C7_YpACRdkg';
+dotenv.config();
 
-const bot = new TelegramBot(token, '@duniakriptoind');
+const { TELEGRAM_BOT_TOKEN, SITE_URL } = process.env;
+
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, '@duniakriptoind');
 
 export default function addFeedItemToTelegram(feed) {
-  console.log(`https://duniakripto-ssr.vercel.app/${feed}`, 'data');
-  bot.sendMessage(`https://duniakripto-ssr.vercel.app/${feed}`);
+  bot.sendMessage(`${SITE_URL}${feed}`);
 }

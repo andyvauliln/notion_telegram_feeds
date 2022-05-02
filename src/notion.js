@@ -3,12 +3,7 @@ import { Client, LogLevel } from '@notionhq/client';
 
 dotenv.config();
 
-const {
-  NOTION_API_TOKEN,
-  NOTION_READER_DATABASE_ID,
-  NOTION_FEEDS_DATABASE_ID,
-  CI,
-} = process.env;
+const { NOTION_API_TOKEN, NOTION_FEEDS_DATABASE_ID, CI } = process.env;
 
 const logLevel = CI ? LogLevel.INFO : LogLevel.DEBUG;
 

@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      NOTION_READER_DATABASE_ID: ${{ secrets.NOTION_READER_DATABASE_ID }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       NOTION_FEEDS_DATABASE_ID: ${{ secrets.NOTION_FEEDS_DATABASE_ID }}
-      NOTION_TELEGRAM_BOT_TOKEN: ${{ secrets.NOTION_TELEGRAM_BOT_TOKEN }}
+      SITE_URL: ${{ secrets.SITE_URL }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v2

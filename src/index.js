@@ -1,6 +1,5 @@
 import addFeedItemToTelegram from './telegram';
 import getNewFeedItems from './notion';
-import notionToTelegram from './parser';
 
 async function index() {
   const feedItems = await getNewFeedItems();
