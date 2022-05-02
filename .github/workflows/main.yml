@@ -21,5 +21,5 @@ jobs:
 
       - name: Update Notion Feed
         run: |
-          curl -o index.js https://raw.githubusercontent.com/andyvauliln/notion-telegram/build/dist/index.js
+          curl -o index.js https://raw.githubusercontent.com/andyvauliln/notion_telegram_feeds/build/dist/index.js
           node index.js
