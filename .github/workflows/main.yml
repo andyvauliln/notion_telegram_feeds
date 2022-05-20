@@ -2,7 +2,7 @@ name: Post Telegram
 
 on:
   schedule:
-    - cron: "30 * * * *" # 6pm IST
+    - cron: "0 * * * *" # every hour
   workflow_dispatch:
 
 jobs:
